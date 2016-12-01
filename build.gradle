@@ -16,9 +16,9 @@ ext.config = parsedConfig
 apply plugin: 'jmeter'
 buildscript {
     repositories {
-	//mavenLocal()
+	mavenLocal()
 	mavenCentral()
-	//jcenter()
+	jcenter()
     }
     
     dependencies {
