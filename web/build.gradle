@@ -1,0 +1,246 @@
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.14'
+}
+
+def mavenGroupId = project.hasProperty('mavenGroupId') ? project.getProperty('mavenGroupId') : 'io.pivotal'
+def appName = project.hasProperty('appName') ? project.getProperty('appName') : 'electionresult'
+//def version = project.hasProperty('version') ? project.getProperty('version') : '1.0'
+
+ext.mavenGroupId = mavenGroupId
+ext.appName = appName
+//ext.version = version.toInteger()
+
+
+//jar {
+ //   manifest {
+  //      attributes 'Implementation-Title': 'Gradle Quickstart',
+   //                'Implementation-Version': version
+    //}
+//}
+
+project(':web') {
+	apply plugin: 'java'
+	apply plugin: 'war'
+	apply plugin: 'sonar-runner'
+	apply plugin: 'eclipse'
+	apply plugin: 'eclipse-wtp'
+	sonarRunner {
+		forkOptions {
+			maxHeapSize = '512m'
+		}
+	}
+	
+	apply plugin: 'maven'
+	apply plugin: 'maven-publish'
+	apply plugin: 'com.bmuschko.cargo'
+	apply plugin: 'cloudfoundry'
+	
+	
+	repositories {
+		mavenLocal()
+		mavenCentral()
+     maven { url "http://repo.springsource.org/milestone" }
+     maven { url "http://repo.maven.apache.org/maven2" }
+	}
+	
+	dependencies {
+	compile group: 'commons-collections', name: 'commons-collections',version: '3.2'
+	
+	compile group: 'org.seleniumhq.selenium', name: 'selenium-server-standalone', version: '2.53.0'
+	compile group: 'com.google.guava', name: 'guava', version: '20.0-hal'
+	compile group: 'com.github.kulya', name: 'jmeter-gradle-plugin', version: '1.3.4-2.13'
+	
+	//compile group: 'org.seleniumhq.selenium', name: 'selenium-server-standalone', version: '3.0.1'
+    compile group: 'org.springframework.amqp', name: 'spring-rabbit', version:'1.2.0.RELEASE'
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-firefox-driver', version:'3.0.1'
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-server', version:'3.0.1'
+    compile group: 'com.googlecode.json-simple', name: 'json-simple', version:'1.1'
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version:'3.0.1'
+    compile(group: 'org.springframework', name: 'spring-context', version:'3.1.1.RELEASE') {
+exclude(module: 'commons-logging')
+    }
+    compile group: 'org.springframework', name: 'spring-webmvc', version:'3.1.1.RELEASE'
+    compile group: 'org.springframework', name: 'spring-test', version:'3.1.1.RELEASE'
+    compile group: 'org.springframework.cloud', name: 'spring-service-connector', version:'0.9.2'
+    compile group: 'org.springframework.cloud', name: 'cloudfoundry-connector', version:'0.9.2'
+    compile group: 'org.aspectj', name: 'aspectjrt', version:'1.6.10'
+    compile group: 'org.slf4j', name: 'slf4j-api', version:'1.6.6'
+    compile group: 'org.slf4j', name: 'slf4j-log4j12', version:'1.6.6'
+    compile(group: 'log4j', name: 'log4j', version:'1.2.15') {
+exclude(module: 'mail')
+exclude(module: 'jms')
+exclude(module: 'jmxtools')
+exclude(module: 'jmxri')
+    }    
+    
+    compile group: 'javax.inject', name: 'javax.inject', version:'1'
+    compile group: 'javax.servlet', name: 'jstl', version:'1.2'
+    compile group: 'org.codehaus.jackson', name: 'jackson-mapper-asl', version:'1.9.13'
+    compile group: 'org.springframework.data', name: 'spring-data-redis', version:'1.0.6.RELEASE'
+    compile group: 'org.json', name: 'org.json', version:'chargebee-1.0'
+    compile group: 'commons-dbcp', name: 'commons-dbcp', version:'1.4'
+    compile group: 'org.springframework', name: 'spring-jdbc', version:'3.2.3.RELEASE'
+    runtime group: 'org.slf4j', name: 'jcl-over-slf4j', version:'1.6.6'
+    testCompile group: 'junit', name: 'junit', version:'4.7'
+    //providedCompile group: 'javax.servlet', name: 'servlet-api', version:'2.5'
+	compile group: 'javax.servlet', name: 'servlet-api', version: '2.5'
+    //providedCompile group: 'javax.servlet.jsp', name: 'jsp-api', version:'2.1'
+	compile group: 'javax.servlet.jsp', name: 'jsp-api', version: '2.2'
+	//compile 'com.google.guava:guava:20.0'
+        }
+
+        sourceSets {
+		regressionTest {
+			java.srcDir file("src/test/regression")
+			resources.srcDir file("src/test/regression")
+			compileClasspath = sourceSets.main.output + configurations.testRuntime
+			runtimeClasspath = output + compileClasspath
+		}
+		performanceTest {
+			java.srcDir file("src/test/performance")
+			resources.srcDir file("src/performance/resources")
+			compileClasspath = sourceSets.main.output + configurations.testRuntime
+			runtimeClasspath = output + compileClasspath
+		}
+		
+	}
+	
+	
+
+	task createBuildInfoFile << {
+		def buildInfoFile = new File("$buildDir/build-info.properties")
+		Properties props = new Properties()
+		props.setProperty('version', project.version.toString())
+		props.setProperty('timestamp', project.buildTimestamp)
+		props.store(buildInfoFile.newWriter(), null)
+	}
+	
+	war {
+		dependsOn createBuildInfoFile
+		baseName = appName
+		
+		from(buildDir) {
+			include 'build-info.properties'
+			into('WEB-INF/classes')
+		}
+	}
+
+	sonarRunner {
+	    sonarProperties {
+		property "sonar.host.url", sonarHostUrl
+		property "sonar.jdbc.url", sonarJdbcUrl
+		property "sonar.jdbc.driverClassName", sonarJdbcDriverClassName
+		property "sonar.jdbc.username", sonarJdbcUserName
+		property "sonar.jdbc.password", sonarJdbcPassword
+	    }
+	}
+
+	subprojects {
+		sonarRunner {
+			sonarProperties {
+				property "sonar.sourceEncoding", "UTF-8"
+			}
+		}
+	}
+
+	uploadArchives{
+		repositories{
+			mavenDeployer{
+				repository(url: releasesRepoPath){
+					authentication(userName:repoUserName, password:repoPassword)
+				}
+			}
+		}
+	}
+	
+	publishing {
+		publications {
+			webApp(MavenPublication) {
+				groupId mavenGroupId
+				artifactId appName
+				version version
+			
+				from components.web
+			}
+		}
+		repositories {
+			maven {
+				url releasesRepoPath
+				credentials {
+					username = repoUserName
+					password = repoPassword
+				}
+			}
+		}
+	}
+	
+	repositories {
+		maven {
+			url releasesRepoPath 
+		}
+	}
+	configurations {
+		downloadWar
+	}
+	println "$mavenGroupId:$appName:$project.version@war"
+	dependencies {		
+		downloadWar ("$mavenGroupId:$appName:$project.version@war"){ 
+			 artifact {
+				name = "$appName"
+				extension = 'war'
+				type = 'war'
+			}
+    		}
+	}
+
+	task downloadBinaryArchive(type: Copy) {		
+		from configurations.downloadWar
+		into "$buildDir/libs"		
+	}
+
+	cargo {
+	    containerId = config.server.containerId
+	    port = config.server.port
+
+	    deployable {
+	    	def fileName = appName+"-"+version
+	    	def filePath = "$buildDir/libs/$fileName"+".war"
+		file = new File ("$buildDir/libs/$fileName"+".war")
+		context = appName
+	    }
+
+	    local {
+		homeDir = file(config.server.localHomeDir)
+	    }
+	}
+
+	//Integration Test
+	task regressionTest(type: Test) {
+		description = 'Runs the regrssion tests.'
+		group = 'verification'
+		testClassesDir = sourceSets.regressionTest.output.classesDir
+		classpath = sourceSets.regressionTest.runtimeClasspath
+	}
+
+	//Performance Test
+	task performanceTest(type: Test) {
+		description = 'Runs the performance tests.'
+		group = 'verification'
+		testClassesDir = sourceSets.performanceTest.output.classesDir
+		classpath = sourceSets.performanceTest.runtimeClasspath
+	}
+
+		
+	cloudfoundry {
+	      target = config.cf.target
+	      space = config.cf.space
+	      application = appName
+	      def fileName = appName+"-"+version
+	      def filePath = "$buildDir/libs/$fileName"+".war"
+	      file = new File ("$buildDir/libs/$fileName"+".war")
+	      uri = appName+"." + config.cf.baseUri
+	      memory = defaultMemory.toInteger()
+	      instances = defaultInstances.toInteger()
+  	}
+
+}

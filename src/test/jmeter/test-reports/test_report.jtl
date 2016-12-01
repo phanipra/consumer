@@ -1,0 +1,2 @@
+timeStamp;elapsed;label;responseCode;threadName;success;bytes;grpThreads;allThreads;Latency;SampleCount;ErrorCount;Hostname;Connect
+2016.12.01 09:51:28;4971;HTTP Request;200;Thread Group 1-1;true;23997;1;1;4524;1;0;Wn7x64-57QK882;2427

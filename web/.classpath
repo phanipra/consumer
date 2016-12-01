@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry path="src/main/java" kind="src">
+		<attributes>
+			<attribute name="FROM_GRADLE_MODEL" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="src/main/resources" kind="src">
+		<attributes>
+			<attribute name="FROM_GRADLE_MODEL" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="src/test/regression" kind="src"/>
+	<classpathentry path="src/test/performance" kind="src"/>
+	<classpathentry path="org.eclipse.buildship.core.gradleclasspathcontainer" kind="con">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="org.testng.TESTNG_CONTAINER" kind="con"/>
+	<classpathentry path="bin" kind="output"/>
+	<classpathentry path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8/" kind="con"/>
+	<classpathentry path="org.eclipse.jst.j2ee.internal.web.container" kind="con"/>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/org/seleniumhq/selenium/selenium-server-standalone/2.53.0/selenium-server-standalone-2.53.0.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/com/google/guava/guava/20.0-hal/guava-20.0-hal.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/org/springframework/amqp/spring-rabbit/1.2.0.RELEASE/spring-rabbit-1.2.0.RELEASE.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.0.1/selenium-firefox-driver-3.0.1.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/org/seleniumhq/selenium/selenium-server/3.0.1/selenium-server-3.0.1.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/com/googlecode/json-simple/json-simple/1.1/json-simple-1.1.jar" kind="lib" sourcepath="C:/Users/priya_rani/.m2/repository/com/googlecode/json-simple/json-simple/1.1/json-simple-1.1-sources.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/org/seleniumhq/selenium/selenium-java/3.0.1/selenium-java-3.0.1.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/org/springframework/spring-webmvc/3.1.1.RELEASE/spring-webmvc-3.1.1.RELEASE.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/org/springframework/spring-test/3.1.1.RELEASE/spring-test-3.1.1.RELEASE.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/org/springframework/cloud/spring-service-connector/0.9.2/spring-service-connector-0.9.2.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/org/springframework/cloud/cloudfoundry-connector/0.9.2/cloudfoundry-connector-0.9.2.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/org/aspectj/aspectjrt/1.6.10/aspectjrt-1.6.10.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/org/slf4j/slf4j-api/1.6.6/slf4j-api-1.6.6.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/org/slf4j/slf4j-log4j12/1.6.6/slf4j-log4j12-1.6.6.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/javax/servlet/jstl/1.2/jstl-1.2.jar" kind="lib" sourcepath="C:/Users/priya_rani/.m2/repository/javax/servlet/jstl/1.2/jstl-1.2-sources.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.13/jackson-mapper-asl-1.9.13.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/org/springframework/data/spring-data-redis/1.0.6.RELEASE/spring-data-redis-1.0.6.RELEASE.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/org/json/org.json/chargebee-1.0/org.json-chargebee-1.0.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/commons-dbcp/commons-dbcp/1.4/commons-dbcp-1.4.jar" kind="lib" sourcepath="C:/Users/priya_rani/.m2/repository/commons-dbcp/commons-dbcp/1.4/commons-dbcp-1.4-sources.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/org/springframework/spring-jdbc/3.2.3.RELEASE/spring-jdbc-3.2.3.RELEASE.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar" kind="lib" sourcepath="C:/Users/priya_rani/.m2/repository/javax/servlet/servlet-api/2.5/servlet-api-2.5-sources.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.gradle/caches/modules-2/files-2.1/javax.servlet.jsp/jsp-api/2.2/5bf0c26ef77df58c7c28be2d9d52246f2b437a54/jsp-api-2.2.jar" kind="lib" sourcepath="C:/Users/priya_rani/.gradle/caches/modules-2/files-2.1/javax.servlet.jsp/jsp-api/2.2/78bc1457a1fc2f8a7037cd2b247062ab3daac212/jsp-api-2.2-sources.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/org/slf4j/jcl-over-slf4j/1.6.6/jcl-over-slf4j-1.6.6.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/com/rabbitmq/amqp-client/3.1.3/amqp-client-3.1.3.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/org/springframework/amqp/spring-amqp/1.2.0.RELEASE/spring-amqp-1.2.0.RELEASE.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.0.1/selenium-remote-driver-3.0.1.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/com/beust/jcommander/1.48/jcommander-1.48.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/org/seleniumhq/selenium/jetty-repacked/9.2.13.v20160825/jetty-repacked-9.2.13.v20160825.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/org/seleniumhq/selenium/htmlunit-driver/2.23/htmlunit-driver-2.23.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/org/yaml/snakeyaml/1.15/snakeyaml-1.15.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.0.1/selenium-chrome-driver-3.0.1.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.0.1/selenium-edge-driver-3.0.1.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.0.1/selenium-ie-driver-3.0.1.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.0.1/selenium-opera-driver-3.0.1.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.0.1/selenium-safari-driver-3.0.1.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/org/seleniumhq/selenium/selenium-support/3.0.1/selenium-support-3.0.1.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/net/sourceforge/htmlunit/htmlunit/2.23/htmlunit-2.23.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/com/codeborne/phantomjsdriver/1.3.0/phantomjsdriver-1.3.0.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/org/springframework/spring-web/3.1.1.RELEASE/spring-web-3.1.1.RELEASE.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/org/springframework/cloud/core/0.9.2/core-0.9.2.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.13/jackson-core-asl-1.9.13.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/redis/clients/jedis/2.1.0/jedis-2.1.0.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/org/seleniumhq/selenium/selenium-api/3.0.1/selenium-api-3.0.1.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/cglib/cglib-nodep/3.2.4/cglib-nodep-3.2.4.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/com/google/code/gson/gson/2.3.1/gson-2.3.1.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/org/apache/httpcomponents/httpmime/4.5.2/httpmime-4.5.2.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/net/java/dev/jna/jna-platform/4.1.0/jna-platform-4.1.0.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/io/netty/netty/3.5.7.Final/netty-3.5.7.Final.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/xalan/xalan/2.7.2/xalan-2.7.2.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/net/sourceforge/htmlunit/htmlunit-core-js/2.23/htmlunit-core-js-2.23.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/net/sourceforge/htmlunit/neko-htmlunit/2.23/neko-htmlunit-2.23.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/net/sourceforge/cssparser/cssparser/0.9.20/cssparser-0.9.20.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/commons-io/commons-io/2.5/commons-io-2.5.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar" kind="lib" sourcepath="C:/Users/priya_rani/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2-sources.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar" kind="lib" sourcepath="C:/Users/priya_rani/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0-sources.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/xalan/serializer/2.7.2/serializer-2.7.2.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/xerces/xercesImpl/2.11.0/xercesImpl-2.11.0.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/org/w3c/css/sac/1.3/sac-1.3.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context-support/3.1.4.RELEASE/42824202b65f30da00e86d2980d700059ee900fc/spring-context-support-3.1.4.RELEASE.jar" kind="lib" sourcepath="C:/Users/priya_rani/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context-support/3.1.4.RELEASE/7432f3231606ce54b0247e3ec0f4ca93893ea992/spring-context-support-3.1.4.RELEASE-sources.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/3.2.3.RELEASE/accdd65db57e79e49f2af037bb76f5a55a580f00/spring-core-3.2.3.RELEASE.jar" kind="lib" sourcepath="C:/Users/priya_rani/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/3.2.3.RELEASE/c923c5360b7bba4209020a4796c6d53f68063d0f/spring-core-3.2.3.RELEASE-sources.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/3.2.3.RELEASE/a48eb92ef51e0aed7d23dcaa54225b8f24808db4/spring-beans-3.2.3.RELEASE.jar" kind="lib" sourcepath="C:/Users/priya_rani/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/3.2.3.RELEASE/3a9f1fb6f5b5da1189c5da7673bf11738ffa956f/spring-beans-3.2.3.RELEASE-sources.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.gradle/caches/modules-2/files-2.1/org.springframework/spring-tx/3.2.3.RELEASE/40d76c7b27769a3235547bd329d20878df343b19/spring-tx-3.2.3.RELEASE.jar" kind="lib" sourcepath="C:/Users/priya_rani/.gradle/caches/modules-2/files-2.1/org.springframework/spring-tx/3.2.3.RELEASE/955a8dd09e6ee15bb00054811d427feb579923d3/spring-tx-3.2.3.RELEASE-sources.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/net/java/dev/jna/jna/4.1.0/jna-4.1.0.jar" kind="lib">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.websocket/websocket-client/9.2.18.v20160721/6e253091f8eed8d1364c956a53d4f4c13145a853/websocket-client-9.2.18.v20160721.jar" kind="lib" sourcepath="C:/Users/priya_rani/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.websocket/websocket-client/9.2.18.v20160721/da61119bbe0bf6d73b71258372d81bb6636302ed/websocket-client-9.2.18.v20160721-sources.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-util/9.2.18.v20160721/b304329684d004c1d258609f6ccd9a8e2a0393f1/jetty-util-9.2.18.v20160721.jar" kind="lib" sourcepath="C:/Users/priya_rani/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-util/9.2.18.v20160721/685967636e2488f39ee14e07eb2dd6a940ab41e2/jetty-util-9.2.18.v20160721-sources.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-io/9.2.18.v20160721/9e2318fdf42815e78008f5942258cbf0ab9806d4/jetty-io-9.2.18.v20160721.jar" kind="lib" sourcepath="C:/Users/priya_rani/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-io/9.2.18.v20160721/e0b5eed44f7eba1bcf15fb37c6e2c60a5ddf55f0/jetty-io-9.2.18.v20160721-sources.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.websocket/websocket-common/9.2.18.v20160721/b48b198c5dd66e497a3ffa3c5b019c243aef793f/websocket-common-9.2.18.v20160721.jar" kind="lib" sourcepath="C:/Users/priya_rani/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.websocket/websocket-common/9.2.18.v20160721/a2aa5e26b2b49e8d0c3450b6e520565912951bb5/websocket-common-9.2.18.v20160721-sources.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.websocket/websocket-api/9.2.18.v20160721/d039da78ea75bd60dea3a0258a0b5a7fc45cc9c9/websocket-api-9.2.18.v20160721.jar" kind="lib" sourcepath="C:/Users/priya_rani/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.websocket/websocket-api/9.2.18.v20160721/c9a96e47d547c949c9f1114b7312b0ef20d099c2/websocket-api-9.2.18.v20160721-sources.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.gradle/caches/modules-2/files-2.1/commons-pool/commons-pool/1.5.5/7d8ffbdc47aa0c5a8afe5dc2aaf512f369f1d19b/commons-pool-1.5.5.jar" kind="lib" sourcepath="C:/Users/priya_rani/.gradle/caches/modules-2/files-2.1/commons-pool/commons-pool/1.5.5/22dae31a0b73022e69d66baaaf36ab4355f91f4f/commons-pool-1.5.5-sources.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/3.1.4.RELEASE/ea5a227269a74dfd0d840ca91e647bc5212072b8/spring-context-3.1.4.RELEASE.jar" kind="lib" sourcepath="C:/Users/priya_rani/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/3.1.4.RELEASE/b113853e9b635b5519795cf8b5ab462b09fec36/spring-context-3.1.4.RELEASE-sources.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/junit/junit/4.12/junit-4.12.jar" kind="lib" sourcepath="C:/Users/priya_rani/.m2/repository/junit/junit/4.12/junit-4.12-sources.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar" kind="lib" sourcepath="C:/Users/priya_rani/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3-sources.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/3.1.4.RELEASE/987dce710d76973e6f4f96a05463086afdf489d3/spring-aop-3.1.4.RELEASE.jar" kind="lib" sourcepath="C:/Users/priya_rani/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/3.1.4.RELEASE/14607a82b8affba3c715eb22bb45b5951412ddc0/spring-aop-3.1.4.RELEASE-sources.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/3.1.4.RELEASE/452515fc1fc013f05f3271fa7c95a43b671e4ffa/spring-expression-3.1.4.RELEASE.jar" kind="lib" sourcepath="C:/Users/priya_rani/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/3.1.4.RELEASE/ea3362484fbe385f71d4a4621b8df740c1252dca/spring-expression-3.1.4.RELEASE-sources.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/priya_rani/.m2/repository/org/springframework/spring-asm/3.1.4.RELEASE/spring-asm-3.1.4.RELEASE.jar" kind="lib" sourcepath="C:/Users/priya_rani/.m2/repository/org/springframework/spring-asm/3.1.4.RELEASE/spring-asm-3.1.4.RELEASE-sources.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+</classpath>
