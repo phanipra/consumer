@@ -2,22 +2,6 @@ task wrapper(type: Wrapper) {
     gradleVersion = '2.14'
 }
 
-def mavenGroupId = project.hasProperty('mavenGroupId') ? project.getProperty('mavenGroupId') : 'io.pivotal'
-def appName = project.hasProperty('appName') ? project.getProperty('appName') : 'electionresult'
-//def version = project.hasProperty('version') ? project.getProperty('version') : '1.0'
-
-ext.mavenGroupId = mavenGroupId
-ext.appName = appName
-//ext.version = version.toInteger()
-
-
-//jar {
- //   manifest {
-  //      attributes 'Implementation-Title': 'Gradle Quickstart',
-   //                'Implementation-Version': version
-    //}
-//}
-
 project(':web') {
 	apply plugin: 'java'
 	apply plugin: 'war'
@@ -41,16 +25,16 @@ project(':web') {
 		mavenCentral()
      maven { url "http://repo.springsource.org/milestone" }
      maven { url "http://repo.maven.apache.org/maven2" }
+     maven { url "https://mvnrepository.com/artifact/com.google.guava/guava" }
+     maven { url "https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-server-standalone" }
+     maven { url "https://mvnrepository.com/artifact/com.github.kulya/jmeter-gradle-plugin"}  
 	}
 	
 	dependencies {
-	compile group: 'commons-collections', name: 'commons-collections',version: '3.2'
-	
-	compile group: 'org.seleniumhq.selenium', name: 'selenium-server-standalone', version: '2.53.0'
-	compile group: 'com.google.guava', name: 'guava', version: '20.0-hal'
-	compile group: 'com.github.kulya', name: 'jmeter-gradle-plugin', version: '1.3.4-2.13'
-	
-	//compile group: 'org.seleniumhq.selenium', name: 'selenium-server-standalone', version: '3.0.1'
+    compile group: 'commons-collections', name: 'commons-collections',version: '3.2'
+    compile group: 'commons-collections', name: 'commons-collections',version: '3.2'	
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-server-standalone', version: '2.53.0'	     	 
+    compile group: 'com.google.guava', name: 'guava', version: '19.0'
     compile group: 'org.springframework.amqp', name: 'spring-rabbit', version:'1.2.0.RELEASE'
     compile group: 'org.seleniumhq.selenium', name: 'selenium-firefox-driver', version:'3.0.1'
     compile group: 'org.seleniumhq.selenium', name: 'selenium-server', version:'3.0.1'
